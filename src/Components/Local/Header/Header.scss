@@ -1,0 +1,113 @@
+.main-header {
+  width: 100%;
+  min-height: 1120px;
+  position: relative;
+  overflow: hidden;
+  svg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    path {
+      transition: fill 2s;
+      will-change: fill;
+    }
+  }
+  .header-content {
+    padding: 250px 0 100px 0;
+    img {
+      position: relative;
+      top: -100px;
+      left: -200px;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      span {
+        font-size: 30px;
+        color: #0cbfae;
+        text-transform: capitalize;
+        span.Data {
+          color: transparent;
+          -webkit-text-stroke: 1px #737373;
+          font-weight: 600;
+          position: relative;
+          &::before {
+            position: absolute;
+            content: attr(data);
+            color: #f57f17;
+            white-space: nowrap;
+            font-size: 30px;
+            overflow: hidden;
+            text-transform: capitalize;
+            -webkit-text-stroke: 1px #f57f17;
+            border-right: 2px solid #0cbfae;
+          }
+        }
+        span.DataActive {
+          &::before {
+            animation: textData 4s infinite;
+          }
+        }
+      }
+      h2 {
+        font-size: 55px;
+        color: #0cbfae;
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 19px;
+        color: #909090;
+        margin-top: 20px;
+        text-transform: capitalize;
+      }
+      button {
+        width: 250px;
+        height: 70px;
+        border: none;
+        border-radius: 70px;
+        margin-top: 30px;
+        margin-right: 20px;
+        outline: none;
+        color: white;
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+      button.hire {
+        background-color: #09bead;
+        box-shadow: 0 3px 20px 0 #09bead;
+      }
+      button.resume {
+        background-color: #f57f17;
+        box-shadow: 0 3px 20px 0 #f57f17;
+      }
+    }
+  }
+}
+//=================Start Responsive=================//
+
+//==============Start Mobiles=============//
+@media only screen and (max-width: 575.98px) {
+  .main-header {
+    svg {
+      width: 1700px;
+    }
+    .header-content {
+      .content {
+        button {
+          box-shadow: none !important;
+          margin: 15px 0;
+        }
+      }
+      text-align: center;
+      img {
+        top: 50px;
+      }
+    }
+  }
+}
+//=======================================//
+
+//==================================================//

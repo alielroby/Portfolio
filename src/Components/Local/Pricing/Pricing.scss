@@ -1,0 +1,9 @@
+.pricing {
+  padding: 100px 0;
+  .row {
+    margin-top: 40px;
+    &:nth-child(2) {
+      margin-top: 100px;
+    }
+  }
+}

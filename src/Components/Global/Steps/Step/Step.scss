@@ -1,0 +1,52 @@
+.step {
+  position: relative;
+  width: 95%;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  color: rgb(95, 95, 95);
+  text-transform: capitalize;
+  h4 {
+    color: #ff5823;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+  span {
+    margin-bottom: 5px;
+    font-size: 19px;
+    display: block;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    text-transform: capitalize;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: -3px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #0abead;
+  }
+  .date {
+    padding: 3px 8px;
+    background-color: #f57f17;
+    border-radius: 30px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+//==============Start Mobiles=============//
+@media only screen and (max-width: 575.98px) {
+  .step {
+    &::before {
+      left: -37px;
+    }
+  }
+}
+//=======================================//

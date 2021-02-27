@@ -1,0 +1,126 @@
+.about {
+  width: 100%;
+  min-height: 1000px;
+  padding: 100px 0;
+  overflow: hidden;
+  img {
+    position: relative;
+    left: -120px;
+  }
+  .row {
+    margin-top: 100px;
+  }
+  .content {
+    padding-top: 60px;
+    width: 100%;
+    min-height: 650px;
+    box-shadow: 0 10px 50px 0 #00adff33;
+    padding-bottom: 50px;
+    background-color: transparent;
+    h3 {
+      font-size: 35px;
+      text-transform: capitalize;
+      font-weight: 100;
+      color: rgb(63, 63, 63);
+      margin-bottom: 20px;
+      position: relative;
+    }
+    p {
+      font-size: 17px;
+      color: #585757;
+      position: relative;
+      width: 80%;
+    }
+    .list {
+      margin-top: 60px;
+      h5 {
+        color: #0abead;
+        text-transform: capitalize;
+        font-weight: 600;
+        position: relative;
+        margin-bottom: 30px;
+      }
+      ul {
+        list-style: none;
+        position: relative;
+        li {
+          font-size: 19px;
+          color: #272727;
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+          &::before {
+            content: "";
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #f57f17;
+            position: absolute;
+            left: 0;
+          }
+        }
+      }
+      button {
+        width: 250px;
+        height: 70px;
+        border: none;
+        border-radius: 70px;
+        margin-top: 30px;
+        margin-right: 20px;
+        outline: none;
+        color: white;
+        font-size: 20px;
+        text-transform: capitalize;
+        position: relative;
+        z-index: 2;
+      }
+      button.hire {
+        background-color: #09bead;
+      }
+      button.resume {
+        background-color: #f57f17;
+      }
+    }
+  }
+}
+//=================Start Responsive=================//
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .about {
+    img {
+      left: -300px;
+    }
+  }
+}
+//==============Start Mobiles=============//
+@media only screen and (max-width: 575.98px) {
+  .about {
+    img {
+      left: -450px;
+    }
+    .content {
+      text-align: center;
+      h3 {
+        margin: 0 auto 20px auto;
+        width: max-content;
+      }
+      p {
+        margin: auto;
+      }
+      .list {
+        button {
+          box-shadow: none !important;
+          margin: 15px 0;
+        }
+        ul {
+          width: max-content;
+          margin: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+//=======================================//
+
+//==================================================//

@@ -1,0 +1,28 @@
+@keyframes textData {
+  0% {
+    width: 0%;
+  }
+  85% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes moving {
+  0% {
+    left: 44%;
+  }
+  25% {
+    left: 88%;
+  }
+  50% {
+    left: 44%;
+  }
+  75% {
+    left: 0;
+  }
+  100% {
+    left: 44%;
+  }
+}

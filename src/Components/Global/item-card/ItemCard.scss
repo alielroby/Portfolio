@@ -1,0 +1,117 @@
+.ItemCard {
+  width: 100%;
+  height: 400px;
+  box-shadow: 25px 10px 50px 0 #00adff33;
+  position: relative;
+  .img-con {
+    width: 42px;
+    height: 100%;
+    background-color: #0abead;
+    position: absolute;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    .img {
+      width: 60%;
+      margin: 23px auto;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        .item {
+          width: 100%;
+          height: 400px;
+          box-shadow: 25px 10px 50px 0 #00adff33;
+          position: relative;
+          .img-con {
+            width: 42px;
+            height: 100%;
+            background-color: #0abead;
+            position: absolute;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            .img {
+              width: 60%;
+              margin: 23px auto;
+              position: relative;
+              cursor: pointer;
+              &::before {
+                content: "";
+                background-color: #0abead;
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                position: absolute;
+                transition: width 1s;
+                will-change: width;
+                top: -8px;
+                left: 0;
+              }
+              &::after {
+                content: attr(headline);
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                position: absolute;
+                right: -100px;
+                font-size: 20px;
+                top: 0px;
+                text-transform: capitalize;
+                color: #3e3e3e;
+              }
+              img {
+                width: 100%;
+                position: relative;
+                z-index: 1;
+              }
+            }
+            .active {
+              &::before {
+                width: 200px;
+              }
+            }
+          }
+        }
+        content: "";
+        background-color: #0abead;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        transition: width 1s;
+        will-change: width;
+        position: absolute;
+        top: -8px;
+        left: 0;
+      }
+      &::after {
+        content: attr(headline);
+        width: max-content;
+        height: 50px;
+        border-radius: 50px;
+        position: absolute;
+        left: 70px;
+        transition: all 1s;
+        will-change: color;
+        font-size: 20px;
+        top: 3px;
+        text-transform: capitalize;
+        font-weight: 600;
+        color: #3e3e3e;
+      }
+      img {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+    }
+    .active {
+      &::after {
+        color: white;
+        left: 50px;
+      }
+      &::before {
+        width: 300px;
+      }
+    }
+  }
+}

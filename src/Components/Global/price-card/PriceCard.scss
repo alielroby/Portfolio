@@ -1,0 +1,79 @@
+.price-card {
+  width: 370px;
+  height: 600px;
+  margin: auto;
+  box-shadow: 0 20px 50px 0 #00adff33;
+  .header-item {
+    width: 100%;
+    height: 170px;
+    padding: 30px 50px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: capitalize;
+    span {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+    h4 {
+      color: white;
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+  .body-item {
+    width: 100%;
+    height: calc(100% - 170px);
+    padding: 50px;
+    ul {
+      margin: auto;
+      list-style: none;
+      li {
+        font-size: 19px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #5f5f5f;
+        i {
+          margin-right: 20px;
+          font-weight: 100;
+        }
+      }
+    }
+    button {
+      border: none;
+      padding: 20px 40px;
+      border-radius: 30px;
+      font-size: 20px;
+      text-transform: capitalize;
+      font-weight: 600;
+      color: white;
+      margin: 50px auto;
+      display: block;
+    }
+  }
+}
+//=================Start Responsive=================//
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .navbar {
+    nav {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+  }
+}
+
+//==============Start Mobiles=============//
+@media only screen and (max-width: 575.98px) {
+  .price-card {
+    margin-top: 70px;
+    width: 100%;
+  }
+}
+//=======================================//
+
+//==================================================//

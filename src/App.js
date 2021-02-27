@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Header from "./Components/Local/Header/Header";
+import WebModeC from "./Public/DarkMode/DarkMode";
+import "./Public/DarkMode/DarkMode.scss";
+import { BrowserRouter } from "react-router-dom";
+import About from "./Components/Local/AboutUs/About";
+import Services from "./Components/Local/Services/Services";
+import Resume from "./Components/Local/Resume/Resume";
+import "./Components/Global/Animations/Animations.scss";
+import Pricing from "./Components/Local/Pricing/Pricing";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <WebModeC />
+      <BrowserRouter>
+        <Header />
+        <About />
+        <Services />
+        <Resume />
+        <Pricing />
+      </BrowserRouter>
     </div>
   );
 }
